@@ -12,6 +12,7 @@
         "de",
         "wm",
         "cpu",
+        "gpu",
         "memory",
         "display",
         "break",
