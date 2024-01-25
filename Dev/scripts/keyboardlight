@@ -1,0 +1,33 @@
+#!/bin/bash
+
+help="
+    usage:\t$0 <COLOR1> <COLOR2> <COLOR3> <COLOR4>
+    \ncolors:\tred\n\tgreen\n\tblue"
+
+if [[ $# -eq 4 ]];then
+    for ((i = 1; i <= 4; i++))
+    do
+        zone=$(($i-1))
+        color=$1
+        echo "setting $color for zone $zone..."
+        case $color in
+            "red")
+                sudo bash -c "echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone0$zone"
+                ;;
+            "green")
+                sudo bash -c "echo 00FF00 > /sys/devices/platform/hp-wmi/rgb_zones/zone0$zone"
+                ;;
+            "blue")
+                sudo bash -c "echo 0000FF > /sys/devices/platform/hp-wmi/rgb_zones/zone0$zone"
+                ;;
+            *)
+                echo "$color for $zone unknown, aborting."
+                exit 1
+                ;;
+        esac
+        shift 1
+    done
+else 
+    echo -e $help
+    exit 1
+fi
