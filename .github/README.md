@@ -1,6 +1,6 @@
 # my dotfiles, using gnome and dwm
 ## whats inside?
-My wallpapers, scripts, css file for improved workspace indicator (gnome), "plymouth wait for animation" file (only copied to documents), grub config (only copied to documents), colors.h for dwm and dmenu, Nautilus Templates, Xresources (dpi set), fehbg file, profile file (path settings), zsh settings, kitty config, dunst config, ranger config, tmux config, picom config, starship config and the following refs: nvim config, dwm source, dmenu source
+My wallpapers, scripts, css file for improved workspace indicator (gnome), "plymouth wait for animation" file (only copied to documents), grub config (only copied to documents), Nautilus Templates, zsh settings and starship config
 ## how to restore
 <ul>
 <li>
