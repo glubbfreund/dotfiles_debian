@@ -17,12 +17,12 @@
 .panel-workspace-indicator,
 .panel-workspace-indicator-box .workspace {
   border: 0px solid #cccccc;
-  background-color: rgba(125, 125, 125, 0.5);
-  color: rgba(107, 107, 107, 0.5);
+  background-color: rgba(250, 249, 246, 0.2);
+  color: rgba(250, 249, 246, 0.2);
 }
 
 .panel-workspace-indicator-box .workspace {
-  background-color: rgba(125, 125, 125, 0.5);
+  background-color: rgba(250, 249, 246, 0.2);
   border-left-width: 0;
 }
 
@@ -31,9 +31,9 @@
 }
 
 .workspace-indicator-active {
-  background-color: #8B9DA2;
+  background-color: #886C6D;
   border: 2px ridge #EEEEEE;
-  color: #8B9DA2;
+  color: #886C6D;
   height: 7px;
   width: 25px;
 }
