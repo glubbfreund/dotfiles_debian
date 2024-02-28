@@ -57,7 +57,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vim='nvim'
 alias suvim='sudo -E -s nvim'
 alias update-boot='sudo update-grub2 && sudo update-initramfs -k all -u'
-alias update-sys='sudo apt update && sudo apt upgrade && sudo flatpak update'
+alias update-sys='sudo apt update && sudo apt -V upgrade && sudo flatpak update'
 
 # add addons (as debian package) and enable starship
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
